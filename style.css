@@ -1,5 +1,36 @@
 body {
-    background-color: white;
+    background-color: blue;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+#textBody {
+    margin-left: 10px;
+    width: 650px;
+}
+
+.myImg {
+    margin-top: 50px;
+}
+
+form {
+    border: 5px solid white;
+    height: 90px;
+    width: 500px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#demo {
+    font-size: larger;
+    font-weight: 600;
+    border: 1px solid white;
 }
 
 th {

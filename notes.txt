@@ -1,0 +1,55 @@
+This is the original code I started with for the table attempt
+    
+    //function showText(data){
+      //let placeholder = document.querySelector("#data-output");
+      //let out = "";
+      //out = JSON.stringify(data)
+      //for(let product of data) {
+       //out += `
+       //<tr>
+         //<td>${product.name}</td>
+         //<td>${product.year}</td>
+         //<td>${product.color}</td>
+         //<td>${product.pantone_value}</td>
+       //</tr>
+       //`;
+      //}
+       //placeholder.innerHTML = out;
+     //}
+
+     */
+
+
+      /** This code will never work because the API is not 
+     * a array, I may return with a alternative 
+      <ul class="list"></ul> belong on html with the fetch below
+
+     * 
+  fetch(url)
+  // returns json as a object so it works
+  .then(function(response) { return response.json(); })
+  // call function
+  
+  .then((data) => {
+    
+    // test I ran to see if data is pulling
+    // .then(data => console.log(JSON.stringify(data) + " test 2"))
+
+    list.innerHTML = data
+      .map(({ name, url }) => {
+      return `<li class="listitem" results=${results}>
+      <p>${name}</p>
+      <p>${url}</p>
+    </li>`;
+    })
+    .join('');
+  })
+  
+  .catch(error => console.warn);
+
+
+**/
+
+/*
+
+    
